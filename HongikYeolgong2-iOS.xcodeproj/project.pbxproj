@@ -42,6 +42,9 @@
 		827DC0742C39943200E88069 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 827DC0642C39943200E88069 /* Pretendard-Medium.otf */; };
 		827DC0752C39943200E88069 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 827DC0652C39943200E88069 /* Pretendard-Black.otf */; };
 		827DC0762C39943200E88069 /* SUITE-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 827DC0662C39943200E88069 /* SUITE-Heavy.otf */; };
+		828F472A2C46ABFF00C7B502 /* DIConatainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F47292C46ABFF00C7B502 /* DIConatainer.swift */; };
+		828F472C2C46ACAD00C7B502 /* DependencyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F472B2C46ACAD00C7B502 /* DependencyWrapper.swift */; };
+		828F472F2C46AD5000C7B502 /* CalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828F472E2C46AD5000C7B502 /* CalendarRepository.swift */; };
 		828FF2B32C3E71F1001A4ADE /* DialogModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828FF2B22C3E71F1001A4ADE /* DialogModifier.swift */; };
 		82AB4F1D2C3EBF5400787B3B /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB4F1C2C3EBF5400787B3B /* AlertModifier.swift */; };
 		82AB4F212C3EE9DB00787B3B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AB4F202C3EE9DB00787B3B /* HomeViewModel.swift */; };
@@ -92,6 +95,9 @@
 		827DC0642C39943200E88069 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../font/Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		827DC0652C39943200E88069 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "../../../font/Pretendard-Black.otf"; sourceTree = "<group>"; };
 		827DC0662C39943200E88069 /* SUITE-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SUITE-Heavy.otf"; path = "../../../font/SUITE-Heavy.otf"; sourceTree = "<group>"; };
+		828F47292C46ABFF00C7B502 /* DIConatainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConatainer.swift; sourceTree = "<group>"; };
+		828F472B2C46ACAD00C7B502 /* DependencyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyWrapper.swift; sourceTree = "<group>"; };
+		828F472E2C46AD5000C7B502 /* CalendarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRepository.swift; sourceTree = "<group>"; };
 		828FF2B22C3E71F1001A4ADE /* DialogModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogModifier.swift; sourceTree = "<group>"; };
 		82AB4F1C2C3EBF5400787B3B /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
 		82AB4F202C3EE9DB00787B3B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		5E5B0BC82C3286EB00936435 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				828F47272C46AB0E00C7B502 /* App */,
 				5E5B0BCB2C3287A900936435 /* Container */,
 				5E5B0BCE2C32890300936435 /* Menu */,
 				5E5B0BC92C32877100936435 /* Login */,
@@ -264,6 +271,32 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		828F47272C46AB0E00C7B502 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82D4D6132C327BDC00A92327 /* HongikYeolgong2_iOSApp.swift */,
+				82D4D6152C327BDC00A92327 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		828F47282C46ABF100C7B502 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				828F47292C46ABFF00C7B502 /* DIConatainer.swift */,
+				828F472B2C46ACAD00C7B502 /* DependencyWrapper.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		828F472D2C46ACFC00C7B502 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				828F472E2C46AD5000C7B502 /* CalendarRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		82D4D6072C327BDC00A92327 = {
 			isa = PBXGroup;
 			children = (
@@ -284,8 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				5E89D7712C356E5500C9CB71 /* Info.plist */,
-				82D4D6132C327BDC00A92327 /* HongikYeolgong2_iOSApp.swift */,
-				82D4D6152C327BDC00A92327 /* ContentView.swift */,
+				828F472D2C46ACFC00C7B502 /* Repository */,
+				828F47282C46ABF100C7B502 /* DIContainer */,
 				825668A12C3672C80066B216 /* Modifiers */,
 				8274CF2F2C33D3DB00FBFA9D /* Coordinator */,
 				5E5B0BC82C3286EB00936435 /* Scene */,
@@ -399,8 +432,10 @@
 				82D4D6162C327BDC00A92327 /* ContentView.swift in Sources */,
 				8252CCDC2C40396100690D75 /* Calendar.swift in Sources */,
 				8252CCE02C404A7300690D75 /* Day.swift in Sources */,
+				828F472C2C46ACAD00C7B502 /* DependencyWrapper.swift in Sources */,
 				82B1FE7B2C3BC567002D9163 /* Quote.swift in Sources */,
 				82AB4F212C3EE9DB00787B3B /* HomeViewModel.swift in Sources */,
+				828F472F2C46AD5000C7B502 /* CalendarRepository.swift in Sources */,
 				8274CF372C33D6D600FBFA9D /* SceneCoordinatorType.swift in Sources */,
 				825668A52C367ED30066B216 /* CustomNavBarModifier.swift in Sources */,
 				825668A72C367F130066B216 /* View+.swift in Sources */,
@@ -418,6 +453,7 @@
 				8274CF352C33D6C200FBFA9D /* SceneCoordinator.swift in Sources */,
 				828FF2B32C3E71F1001A4ADE /* DialogModifier.swift in Sources */,
 				8274CF3B2C33DBC800FBFA9D /* LoginView.swift in Sources */,
+				828F472A2C46ABFF00C7B502 /* DIConatainer.swift in Sources */,
 				82AB4F1D2C3EBF5400787B3B /* AlertModifier.swift in Sources */,
 				82B1FE832C3C1BCD002D9163 /* TimeLapse.swift in Sources */,
 				5E5B0BD52C328A1000936435 /* CustomText.swift in Sources */,

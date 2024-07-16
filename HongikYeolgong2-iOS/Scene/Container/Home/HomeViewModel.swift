@@ -14,8 +14,10 @@ final class HomeViewModel: ObservableObject {
     @Published var showingAlert2 = false
     @Published var showingDialog = false
     
+    @Inject private var calendarRepository: CalendarRepositoryProtocol
+    
     func startRoomUsage() {
-        isRoomReserved = true
+        isRoomReserved = true        
     }
     
     func cancleRoomUsage() {
